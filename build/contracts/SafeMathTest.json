@@ -1,0 +1,511 @@
+{
+  "contractName": "SafeMathTest",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "num",
+          "type": "uint256"
+        }
+      ],
+      "name": "sqrt",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.6+commit.6c089d02\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"num\",\"type\":\"uint256\"}],\"name\":\"sqrt\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/test/SafeMathTest.sol\":\"SafeMathTest\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/math/SafeMath.sol\":{\"keccak256\":\"0x9ed09430799b39e964ba0a2c16d93e6ef107338413cdbdbc2837ee7440706447\",\"urls\":[\"bzz-raw://5e941b0d3fdbd6e8c803ff762c6ff4aef6a0c3cb4023ffd939c6f7fec138f2d0\",\"dweb:/ipfs/QmXsbw7m5SrbYvYkP8wRRu1zcVGJbj7m6xwnWg2XbugLLA\"]},\"project:/contracts/test/SafeMathTest.sol\":{\"keccak256\":\"0xfa7d46010c1534d923f4e687375b54674599e977fae0756e64da892d8f1d256e\",\"urls\":[\"bzz-raw://f1fdcb441e44fdd53783117a84917a9f216663510a8df2e0616d96dac54ab4b2\",\"dweb:/ipfs/QmdB8neCnLJ8AbUKx6n1HT3NxChVzKS6a4eGtGRmfsw3Eg\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5061010c806100206000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c8063677342ce14602d575b600080fd5b605660048036036020811015604157600080fd5b8101908080359060200190929190505050606c565b6040518082815260200191505060405180910390f35b6000607582607c565b9050919050565b6000600382111560c4578190506000600160028481609657fe5b040190505b8181101560bf5780915060028182858160b057fe5b04018160b857fe5b049050609b565b5060d1565b6000821460d057600190505b5b91905056fea2646970667358221220bbd9e06f60d04dbd864f66ceebecb4e5864749d6b4b3657503a4f88d86d1597e64736f6c63430006060033",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c8063677342ce14602d575b600080fd5b605660048036036020811015604157600080fd5b8101908080359060200190929190505050606c565b6040518082815260200191505060405180910390f35b6000607582607c565b9050919050565b6000600382111560c4578190506000600160028481609657fe5b040190505b8181101560bf5780915060028182858160b057fe5b04018160b857fe5b049050609b565b5060d1565b6000821460d057600190505b5b91905056fea2646970667358221220bbd9e06f60d04dbd864f66ceebecb4e5864749d6b4b3657503a4f88d86d1597e64736f6c63430006060033",
+  "immutableReferences": {},
+  "sourceMap": "157:133:9:-:0;;;;5:9:-1;2:2;;;27:1;24;17:12;2:2;157:133:9;;;;;;;",
+  "deployedSourceMap": "157:133:9:-:0;;;;5:9:-1;2:2;;;27:1;24;17:12;2:2;157:133:9;;;;;;;;;;;;;;;;12:1:-1;9;2:12;186:101:9;;;;;;15:2:-1;10:3;7:11;4:2;;;31:1;28;21:12;4:2;186:101:9;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;234:7;261:18;275:3;261:13;:18::i;:::-;254:25;;186:101;;;:::o;5689:312:4:-;5737:9;5767:1;5763;:5;5759:235;;;5789:1;5785:5;;5805:9;5825:1;5821;5817;:5;;;;;;:9;5805:21;;5841:92;5852:1;5848;:5;5841:92;;;5878:1;5874:5;;5916:1;5911;5907;5903;:5;;;;;;:9;5902:15;;;;;;5898:19;;5841:92;;;5759:235;;;;5959:1;5954;:6;5950:44;;5981:1;5977:5;;5950:44;5759:235;5689:312;;;:::o",
+  "source": "// SPDX-License-Identifier: GPL-3.0-or-later\r\n\r\npragma solidity >=0.4.0;\r\n\r\nimport '../math/SafeMath.sol';\r\n\r\n// used for testing the logic of token naming\r\ncontract SafeMathTest {\r\n    function sqrt(uint256 num) public pure returns (uint256) {\r\n        return SafeMath.sqrt(num);\r\n    }\r\n}\r\n",
+  "sourcePath": "C:\\Users\\User\\Documents\\NarfexSwap\\bakeryswaplib\\contracts\\test\\SafeMathTest.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/test/SafeMathTest.sol",
+    "exportedSymbols": {
+      "SafeMathTest": [
+        875
+      ]
+    },
+    "id": 876,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 860,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "48:24:9"
+      },
+      {
+        "absolutePath": "project:/contracts/math/SafeMath.sol",
+        "file": "../math/SafeMath.sol",
+        "id": 861,
+        "nodeType": "ImportDirective",
+        "scope": 876,
+        "sourceUnit": 569,
+        "src": "76:30:9",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 875,
+        "linearizedBaseContracts": [
+          875
+        ],
+        "name": "SafeMathTest",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 873,
+              "nodeType": "Block",
+              "src": "243:44:9",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 870,
+                        "name": "num",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 863,
+                        "src": "275:3:9",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 868,
+                        "name": "SafeMath",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 568,
+                        "src": "261:8:9",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_SafeMath_$568_$",
+                          "typeString": "type(library SafeMath)"
+                        }
+                      },
+                      "id": 869,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "sqrt",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 567,
+                      "src": "261:13:9",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_pure$_t_uint256_$returns$_t_uint256_$",
+                        "typeString": "function (uint256) pure returns (uint256)"
+                      }
+                    },
+                    "id": 871,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "261:18:9",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 867,
+                  "id": 872,
+                  "nodeType": "Return",
+                  "src": "254:25:9"
+                }
+              ]
+            },
+            "documentation": null,
+            "functionSelector": "677342ce",
+            "id": 874,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "sqrt",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 864,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 863,
+                  "mutability": "mutable",
+                  "name": "num",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 874,
+                  "src": "200:11:9",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 862,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "200:7:9",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "199:13:9"
+            },
+            "returnParameters": {
+              "id": 867,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 866,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 874,
+                  "src": "234:7:9",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 865,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "234:7:9",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "233:9:9"
+            },
+            "scope": 875,
+            "src": "186:101:9",
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "scope": 876,
+        "src": "157:133:9"
+      }
+    ],
+    "src": "48:244:9"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/test/SafeMathTest.sol",
+      "exportedSymbols": {
+        "SafeMathTest": [
+          875
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            ">=",
+            "0.4",
+            ".0"
+          ]
+        },
+        "id": 860,
+        "name": "PragmaDirective",
+        "src": "48:24:9"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 569,
+          "absolutePath": "project:/contracts/math/SafeMath.sol",
+          "file": "../math/SafeMath.sol",
+          "scope": 876,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 861,
+        "name": "ImportDirective",
+        "src": "76:30:9"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            875
+          ],
+          "name": "SafeMathTest",
+          "scope": 876
+        },
+        "children": [
+          {
+            "attributes": {
+              "documentation": null,
+              "functionSelector": "677342ce",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "sqrt",
+              "overrides": null,
+              "scope": 875,
+              "stateMutability": "pure",
+              "virtual": false,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "num",
+                      "overrides": null,
+                      "scope": 874,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 862,
+                        "name": "ElementaryTypeName",
+                        "src": "200:7:9"
+                      }
+                    ],
+                    "id": 863,
+                    "name": "VariableDeclaration",
+                    "src": "200:11:9"
+                  }
+                ],
+                "id": 864,
+                "name": "ParameterList",
+                "src": "199:13:9"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 874,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 865,
+                        "name": "ElementaryTypeName",
+                        "src": "234:7:9"
+                      }
+                    ],
+                    "id": 866,
+                    "name": "VariableDeclaration",
+                    "src": "234:7:9"
+                  }
+                ],
+                "id": 867,
+                "name": "ParameterList",
+                "src": "233:9:9"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 867
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "tryCall": false,
+                          "type": "uint256",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              ],
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "sqrt",
+                              "referencedDeclaration": 567,
+                              "type": "function (uint256) pure returns (uint256)"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 568,
+                                  "type": "type(library SafeMath)",
+                                  "value": "SafeMath"
+                                },
+                                "id": 868,
+                                "name": "Identifier",
+                                "src": "261:8:9"
+                              }
+                            ],
+                            "id": 869,
+                            "name": "MemberAccess",
+                            "src": "261:13:9"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 863,
+                              "type": "uint256",
+                              "value": "num"
+                            },
+                            "id": 870,
+                            "name": "Identifier",
+                            "src": "275:3:9"
+                          }
+                        ],
+                        "id": 871,
+                        "name": "FunctionCall",
+                        "src": "261:18:9"
+                      }
+                    ],
+                    "id": 872,
+                    "name": "Return",
+                    "src": "254:25:9"
+                  }
+                ],
+                "id": 873,
+                "name": "Block",
+                "src": "243:44:9"
+              }
+            ],
+            "id": 874,
+            "name": "FunctionDefinition",
+            "src": "186:101:9"
+          }
+        ],
+        "id": 875,
+        "name": "ContractDefinition",
+        "src": "157:133:9"
+      }
+    ],
+    "id": 876,
+    "name": "SourceUnit",
+    "src": "48:244:9"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.6+commit.6c089d02.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.4",
+  "updatedAt": "2022-03-23T12:59:05.856Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
